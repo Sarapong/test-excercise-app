@@ -6,10 +6,10 @@ redis_port = 6379
 redis_password = ""
 
 def hello_redis():
-    redis_data = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
-    input_string = 'word'
-    i = 1
     try:
+        redis_data = redis.StrictRedis(host=redis_host, port=redis_port, password=redis_password, decode_responses=True)
+        input_string = 'word'
+        i = 1
         word_result = """\
         Please select a work format of the system as yoy want.
             1.If you want to add data on the system,Please input 'Add'
